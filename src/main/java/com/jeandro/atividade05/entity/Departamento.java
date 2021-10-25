@@ -1,10 +1,12 @@
 package com.jeandro.atividade05.entity;
 
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
 import javax.persistence.*;
-
-
-import lombok.*;
 
 
 @ToString
@@ -20,6 +22,6 @@ public class Departamento {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Integer id;
     @Column(name = "nome_Departamento")
-    private String nomeFuncionario;
+    private String nomeDepartamento;
 
 }

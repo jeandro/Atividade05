@@ -30,8 +30,8 @@ public class Funcionario {
     @Column(name = "cargo_Funcionario")
     private String cargoFuncionario;
 
-    @OneToOne
-    @JoinColumn(name = "departamento_id",referencedColumnName = "id")
+    @OneToOne(cascade=CascadeType.ALL)
+    @JoinColumn(name = "id",referencedColumnName = "id")
     private Departamento departamento;
 
 
